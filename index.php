@@ -1,8 +1,5 @@
 <?php
-if (!file_exists('madeline.php')) {
-    copy('https://phar.madelineproto.xyz/madeline.php', 'madeline.php');
-}
-require_once 'madeline.php';
+require_once '/vendor/autoload.php';
 $MadelineProto = new \danog\MadelineProto\API("session.madeline");
 $MadelineProto->start();
 
